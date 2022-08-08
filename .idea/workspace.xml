@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87f12d9e-b704-40a4-8bfa-be0b9c6e4472" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/inter/inter-v12-latin_cyrillic-600.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/inter/inter-v12-latin_cyrillic-600.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/inter/inter-v12-latin_cyrillic-600.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/inter/inter-v12-latin_cyrillic-600.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/inter/inter-v12-latin_cyrillic-600.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-600.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-600.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-600.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-600.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-600.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/sourse-sans-pro/source-sans-pro-v21-latin_cyrillic-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_normalize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="87f12d9e-b704-40a4-8bfa-be0b9c6e4472" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,20 +28,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/projects/idaproject/shopping-cart-template",
-    "list.type.of.created.stylesheet": "SCSS",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/projects/idaproject/shopping-cart-template&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -91,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659916816549</updated>
       <workItem from="1659916818503" duration="3264000" />
-      <workItem from="1659920130028" duration="19689000" />
+      <workItem from="1659920130028" duration="20202000" />
     </task>
     <servers />
   </component>
