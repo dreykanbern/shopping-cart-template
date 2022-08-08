@@ -1,0 +1,169 @@
+@use 'normalize';
+@use 'fonts';
+@use 'vars';
+
+//ACTUAL STYLES
+body {
+  background: vars.$mainBackground;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 16px;
+}
+
+.header-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__h1 {
+    font-family: SourceSansProMedium;
+    font-size: 28px;
+    line-height: 35.2px;
+    color: vars.$mainText;
+  }
+  &__sort-btn {
+    font-family: SourceSansPro;
+    font-size: 14px;
+    line-height: 15.08px;
+    color: vars.$defaultText;
+    border-radius: vars.$mainBorderRadius;
+    box-shadow: vars.$mainShadow;
+    padding: 10px 16px;
+    background: vars.$cartBackground;
+    height: 36px;
+    &:after {
+      content: url('@/assets/img/arrow.svg');
+      margin-left: 5px;
+    }
+  }
+}
+
+.content-cart {
+  display: flex;
+  gap: 16px;
+  &__creating-cart {
+    display: flex;
+    flex-direction: column;
+    width: calc(1280px / 4);
+    max-width: 308px;
+    padding: 24px;
+    background: vars.$cartBackground;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: vars.$mainBorderRadius;
+    .creating-cart__label {
+      font-family: SourceSansPro;
+      font-size: 10px;
+      letter-spacing: -0.02em;
+      line-height: 12.57px;
+      color: vars.$creatingCartLabel;
+      margin-bottom: 4px;
+      &:not(:nth-child(3)):after {   // We choose 3 because the inputs also count
+        content: url('@/assets/img/round.svg');
+        vertical-align: super;
+      }
+    }
+    .creating-cart__input {
+      margin-bottom: 16px;
+      padding: 10px 16px;
+      background: vars.$cartBackground;
+      box-shadow: vars.$mainShadow;
+      border-radius: vars.$mainBorderRadius;
+      font-family: SourceSansPro;
+      font-size: 12px;
+      line-height: 15.08px;
+      color: vars.$mainText;
+      &:nth-child(8) {   // We choose 8 because the labels also count
+        margin-bottom: 24px;
+      }
+      &::-ms-input-placeholder {
+        color: vars.$defaultText;
+      }
+      &::-webkit-input-placeholder {
+        color: vars.$defaultText;
+      }
+    }
+    .creating-cart__btn {
+      font-family: Inter;
+      font-size: 12px;
+      letter-spacing: -0.02em;
+      line-height: 14.52px;
+      padding: 10px 0 10px 0;
+      border-radius: 10px;
+    }
+  }
+  &__items-wrapper {
+    width: calc(1328px / 4);
+    height: fit-content;
+    display: flex;
+    position: relative;
+    gap: 16px;
+    background: vars.$cartBackground;
+    border-radius: vars.$mainBorderRadius;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+    /* It may be necessary
+    .items-wrapper__content-item {
+    }
+    */
+    .content-item__img {
+      display: flex;
+      border-radius: 4px 4px 0 0;
+      object-fit: contain;
+      width: unset;
+      max-height: 200px;
+    }
+    .content-item__delete-btn {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 32px;
+      height: 32px;
+      background: vars.$attention;
+      border-radius: 10px;
+    }
+    .content-item__text-attr {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 16px 24px 16px;
+      width: unset;
+      .text-attr__h2 {
+        font-family: SourceSansProMedium;
+        font-size: 20px;
+        line-height: 25.14px;
+        color: vars.$mainText;
+        margin: 0;
+      }
+      .text-attr__description {
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        font-family: SourceSansPro;
+        font-size: 16px;
+        line-height: 20.11px;
+        margin: 16px 0 32px 0;
+      }
+      .text-attr__cost {
+        font-family: SourceSansProMedium;
+        font-size: 24px;
+        line-height: 30.17px;
+      }
+    }
+  }
+}
+//Show delete button
+.content-cart__items-wrapper:hover .content-item__delete-btn {
+  display: flex;
+}
+
+//Button status
+.non-active {
+  color: vars.$defaultText;
+  background: #EEEEEE;
+}
