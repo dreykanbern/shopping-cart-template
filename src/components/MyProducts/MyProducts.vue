@@ -1,13 +1,15 @@
 <template>
   <div class="content-cart__items-wrapper">
-    <ProductsItem
-        class="items-wrapper__content-item"
-        :cart="cart"
-        v-for="cart in carts"
-        :key="cart.id"
-        @delete="$emit('delete', cart)"
-    >
-    </ProductsItem>
+    <transition-group name="flip-list">
+      <ProductsItem
+          class="items-wrapper__content-item"
+          :cart="cart"
+          v-for="cart in carts"
+          :key="cart.id"
+          @delete="$emit('delete', cart)"
+      >
+      </ProductsItem>
+    </transition-group>
   </div>
 </template>
 

@@ -36,6 +36,8 @@
       font-size: 12px;
       line-height: 15.08px;
       color: $mainText;
+      transform: scale(1);
+      transition: transform 0.2s;
 
       &:nth-child(8) { // We choose 8 because the labels also count
         margin-bottom: 24px;
@@ -47,6 +49,10 @@
 
       &::-webkit-input-placeholder {
         color: $defaultText;
+      }
+      &:hover {
+        transform: scale(1.06);
+        transition: transform 0.3s;
       }
     }
 

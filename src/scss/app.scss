@@ -27,21 +27,6 @@ body {
     line-height: 35.2px;
     color: vars.$mainText;
   }
-  &__sort-btn {
-    font-family: SourceSansPro;
-    font-size: 14px;
-    line-height: 15.08px;
-    color: vars.$defaultText;
-    border-radius: vars.$mainBorderRadius;
-    box-shadow: vars.$mainShadow;
-    padding: 10px 16px;
-    background: vars.$cartBackground;
-    height: 36px;
-    &:after {
-      content: url('@/assets/img/arrow.svg');
-      margin-left: 5px;
-    }
-  }
 }
 
 .content-cart {

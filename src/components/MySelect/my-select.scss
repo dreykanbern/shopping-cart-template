@@ -1,0 +1,27 @@
+@import "~@/scss/vars.scss";
+
+.header-cart__sort-btn {
+  position: relative;
+  font-family: SourceSansPro;
+  font-size: 14px;
+  line-height: 15.08px;
+  color: $defaultText;
+  border-radius: $mainBorderRadius;
+  box-shadow: $mainShadow;
+  background: $cartBackground;
+  cursor: pointer;
+}
+
+select {
+  padding: 10px 27px 10px 16px;
+  background: url('@/assets/img/arrow.svg') no-repeat right 16px top 52%;
+  cursor: pointer;
+}
+
+option {
+  color: $mainText;
+}
+
+.disabled {
+  color: $defaultText;
+}
