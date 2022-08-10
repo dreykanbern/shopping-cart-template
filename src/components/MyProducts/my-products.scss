@@ -1,0 +1,20 @@
+@import "~@/scss/vars.scss";
+
+.content-cart {
+  &__items-wrapper {
+    height: fit-content;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 75%;
+    .items-wrapper__content-item {
+      width: calc(1328px / 4);
+      position: relative;
+      background: $cartBackground;
+      border-radius: $mainBorderRadius;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+      cursor: pointer;
+    }
+  }
+}
+

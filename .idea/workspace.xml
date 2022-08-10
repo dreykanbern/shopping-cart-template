@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87f12d9e-b704-40a4-8bfa-be0b9c6e4472" name="Changes" comment="" />
+    <list default="true" id="87f12d9e-b704-40a4-8bfa-be0b9c6e4472" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/MyForm/MyForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MyForm/my-form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MyProducts/MyProducts.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MyProducts/my-products.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProdutsItem/ProductsItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProdutsItem/products-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HomeView.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue Single File Component" />
         <option value="SCSS File" />
       </list>
     </option>
@@ -42,6 +56,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\idaproject\shopping-cart-template\src\components\MyForm" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -69,6 +88,7 @@
       <updated>1659916816549</updated>
       <workItem from="1659916818503" duration="3264000" />
       <workItem from="1659920130028" duration="20202000" />
+      <workItem from="1660089258675" duration="3661000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,8 @@
 @use 'fonts';
 @use 'vars';
 
+@import "~@/scss/vars.scss";
+
 //ACTUAL STYLES
 body {
   background: vars.$mainBackground;
@@ -45,123 +47,8 @@ body {
 .content-cart {
   display: flex;
   gap: 16px;
-  &__creating-cart {
-    display: flex;
-    flex-direction: column;
-    width: calc(1136px / 4);
-    max-width: 284px;
-    height: fit-content;
-    padding: 24px;
-    background: vars.$cartBackground;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
-    border-radius: vars.$mainBorderRadius;
-    .creating-cart__label {
-      font-family: SourceSansPro;
-      font-size: 10px;
-      letter-spacing: -0.02em;
-      line-height: 12.57px;
-      color: vars.$creatingCartLabel;
-      margin-bottom: 4px;
-      &:not(:nth-child(3)):after {   // We choose 3 because the inputs also count
-        content: url('@/assets/img/round.svg');
-        vertical-align: super;
-      }
-    }
-    .creating-cart__input {
-      margin-bottom: 16px;
-      padding: 10px 16px;
-      background: vars.$cartBackground;
-      box-shadow: vars.$mainShadow;
-      border-radius: vars.$mainBorderRadius;
-      font-family: SourceSansPro;
-      font-size: 12px;
-      line-height: 15.08px;
-      color: vars.$mainText;
-      &:nth-child(8) {   // We choose 8 because the labels also count
-        margin-bottom: 24px;
-      }
-      &::-ms-input-placeholder {
-        color: vars.$defaultText;
-      }
-      &::-webkit-input-placeholder {
-        color: vars.$defaultText;
-      }
-    }
-    .creating-cart__btn {
-      font-family: Inter;
-      font-size: 12px;
-      letter-spacing: -0.02em;
-      line-height: 14.52px;
-      padding: 10px 0 10px 0;
-      border-radius: 10px;
-    }
-  }
-  &__items-wrapper {
-    height: fit-content;
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    width: 75%;
-    .items-wrapper__content-item {
-      width: calc(1328px / 4);
-      position: relative;
-      background: vars.$cartBackground;
-      border-radius: vars.$mainBorderRadius;
-      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
-      cursor: pointer;
-    }
-    .content-item__img {
-      display: flex;
-      border-radius: 4px 4px 0 0;
-      object-fit: contain;
-      width: 100%;
-      max-height: 200px;
-    }
-    .content-item__delete-btn {
-      display: none;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: -8px;
-      right: -8px;
-      width: 32px;
-      height: 32px;
-      background: vars.$attention;
-      border-radius: 10px;
-    }
-    .content-item__text-attr {
-      display: flex;
-      flex-direction: column;
-      padding: 16px 16px 24px 16px;
-      width: unset;
-      .text-attr__h2 {
-        font-family: SourceSansProMedium;
-        font-size: 20px;
-        line-height: 25.14px;
-        color: vars.$mainText;
-        margin: 0;
-      }
-      .text-attr__description {
-        width: unset;
-        display: flex;
-        flex-direction: column;
-        font-family: SourceSansPro;
-        font-size: 16px;
-        line-height: 20.11px;
-        margin: 16px 0 32px 0;
-      }
-      .text-attr__cost {
-        font-family: SourceSansProMedium;
-        font-size: 24px;
-        line-height: 30.17px;
-        &:after {
-          content: "руб.";
-          margin-left: 5px;
-        }
-      }
-    }
-  }
 }
+
 //Show delete button
 .items-wrapper__content-item:hover .content-item__delete-btn {
   display: flex;

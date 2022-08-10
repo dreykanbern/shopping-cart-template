@@ -8,71 +8,13 @@
       </button>
   </div>
   <div class="content-cart">
-    <form class="content-cart__creating-cart" @submit.prevent>
-        <label class="creating-cart__label">Наименование товара</label>
-        <input
-            v-model="title"
-            type="text"
-            class="creating-cart__input"
-            placeholder="Введите наименование товара"
-        >
-        <label class="creating-cart__label">Описание товара</label>
-        <!-- Do not use the height attribute => use rows -->
-        <textarea
-            v-model="description"
-            rows="5"
-            class="creating-cart__input"
-            placeholder="Введите описание товара"
-        ></textarea>
-        <label class="creating-cart__label">Ссылка на изображение товара</label>
-        <input
-            v-model="img"
-            type="text"
-            class="creating-cart__input"
-            placeholder="Введите ссылку"
-        >
-        <label class="creating-cart__label">Цена товара</label>
-        <input
-            v-model="price"
-            type="text"
-            class="creating-cart__input"
-            placeholder="Введите цену"
-        >
-        <button
-            class="creating-cart__btn non-active"
-            @click="createProduct"
-        >
-          Добавить товар
-        </button>
-    </form>
-    <div class="content-cart__items-wrapper">
-      <div
-          class="items-wrapper__content-item"
-          v-for="cart in carts"
-          :key="cart.id"
-          @mouseenter="deleteProduct"
-      >
-        <img class="content-item__img" :src="cart.img" alt="default image">
-        <button
-            class="content-item__delete-btn"
-            @click="deleteProduct"
-        >
-          <img class="delete-btn__img" src="@/assets/img/delete-icon.svg" alt="delete-icon">
-        </button>
-        <div class="content-item__text-attr">
-
-          <h2 class="text-attr__h2">{{cart.title}}</h2>
-          <p class="text-attr__description">
-            {{cart.description}}
-          </p>
-
-          <span class="text-attr__cost">{{cart.price}}</span>
-
-        </div>
-
-
-      </div>
-    </div>
+    <my-form
+        @create="createProduct"
+    ></my-form>
+    <my-products
+        :carts="carts"
+        @delete="deleteProduct"
+    ></my-products>
   </div>
 </div>
 
@@ -81,7 +23,10 @@
 <style lang='scss' src="@/scss/app.scss"></style>
 
 <script>
+import MyForm from "@/components/MyForm/MyForm";
+import MyProducts from "@/components/MyProducts/MyProducts";
 export default {
+  components: {MyProducts, MyForm},
   data() {
     return {
       carts: [
@@ -122,26 +67,11 @@ export default {
           price:'10 000',
         },
       ],
-      title: "",
-      description: "",
-      price:"",
-      img: "",
     }
   },
   methods: {
-    createProduct() {
-      const newProduct = {
-        id: Date.now(),
-        title: this.title,
-        description: this.description,
-        price: this.price,
-        img: this.img,
-      }
-      this.carts.push(newProduct);
-      this.title = "";
-      this.description = "";
-      this.price = "";
-      this.img = "";
+    createProduct (cart) {
+      this.carts.push(cart);
     },
     deleteProduct(cart) {
       this.carts = this.carts.filter(c => c.id !== cart.id)
